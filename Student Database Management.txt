@@ -1,0 +1,35 @@
+                                                                                            Student Database Management System
+
+
+This is a C++ project assigned by MyCaptain C++ Workshop to program a simple student database management system using file concepts, structure (user-defined data types) and decision making concepts.
+
+Code:
+
+The program has a structure data type named 'student' with four character  variables, that represent basic student details. Structure variable is s.
+The program uses file systems in the code to work on a binary file and implement a database that can create, store, update and delete, i.e., manage lists of students details. 
+It implements these functions using various file system operations such as: (their functions/uses have been explained in the comments of the code)
+fopen()-filepointer is used to perform this operation.
+fwrite(const void * buffer, size_t size, size_t count, FILE * stream)
+fread(void * buffer, size_t size, size_t count, FILE * stream)
+fseek(FILE* stream, long offset, int origin)
+fflush(stdin)
+fclose()
+puts()
+String functions and other inbuilt functions are also used:
+strcmp()
+getchar()
+getche()
+
+notations rb+ (read-r, binary -b, '+' means to update as well as read), and wb+(write-w, binary-b, '+' means to open to update) have been used.
+
+How it Works:
+
+The program has only main function, and it begins from there with a user-friendly menu that asks the user to choose if they want to:
+1. Add  records to the database
+2. List  records existing in the database
+3. Modify records in the database by matching the lastname of the student whose details need to be modified.
+4. Delete records in the database by matching the lastname of the student whose details need to be deleted.
+5. Exit the program.
+
+In conclusion, this is a simple C++ program with simple functionalities, programmed to illustrate the ease of file system concepts in storing and managing data, with the help of structure data-type buffer streams where the object is stored (to both read and write from). 
+
