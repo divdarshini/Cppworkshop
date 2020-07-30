@@ -1,0 +1,31 @@
+                                                                                                              Bus Reservation Project
+
+This is a C++ project assigned by the MyCaptain Workshop to book tickets for a bus journey, that uses object-oriented programming and decision-making concepts.
+
+Code:
+
+The project has used 1 class "proj1", 6 member functions of that class and instance variables. One function outside the class(Total of 7 functions) and 1 global static variable "k". 
+It also has a class variable of size 10 that refers to the maximum number of buses that can be created. Each index of that variable refers to 1 bus that will have its own separate copy of all the instance variables and member functions of class proj1.  All of these functionalities combine both server-side (admin) and user-side (passenger) working. 
+
+The six member functions are:
+1.create(): Creating the buses and their travel details and schedules
+2.reserve(): Reserving a seat on a bus
+3.empty(): It inputs all the initial values of the seats in a bus as empty, as soon as it is created. So, that afterwards, passengers may book the seats.
+4.show(): Displaying the travel details of a bus, alongside it's vacant and occupied seats, with necessary details.
+5.available(): Displaying the available buses and their travel schedules.
+6.position(int ): All the vacant and occupied seats are displayed along with their booking status. It is called inside the show function.
+The 7th function outside :
+7.vline(char ): It prints consecutively the character passed to it as argument. For presentation purposes.
+
+How it works:
+
+As all programs do, it begins with main. As both admin-side and passenger-side have been combined, we ae provided with a menu to choose from:
+1.Creating the buses and their information.
+2.Reserving/Alloting seats as per user's input and seat availability.
+3.Show all the existing 32 vacant and occupied seats of any inputted bus number.
+4.Display available buses and their requisite information.
+5.Exit the program menu.
+
+In case the user enters the wrong bus number, the program will ask the user to enter  the correct bus number and will repeat the question. In case, the user enters value of seat number exceeding 32 (seat[8][4][10]:8 rows of 4 seats each=8*4=32 seats. Each seat bears 10 characters to display passenger's name or 'Empty'), the program asks user to enter the correct seat number and repeats the question.
+
+In conclusion, the program successfully allows the user to create, reserve, view visual of all seats, and view available buses, in a user-friendly manner with the help of a menu. Comments have been included in several places so that the code is readable by anyone.
